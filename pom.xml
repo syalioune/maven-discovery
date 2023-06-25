@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.syalioune</groupId>
+    <artifactId>maven-discovery</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>settings-encryption</module>
+        <module>dependency-version-ranges</module>
+        <module>configuration</module>
+        <module>optional-dependency</module>
+        <module>repository-layout</module>
+        <module>remote-repository-filtering</module>
+        <module>reactor-improvements</module>
+        <module>dependency-checksum</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <gcp.maven.registry.uri>https://us-central1-maven.pkg.dev/maven-registry/breizhcamp2023</gcp.maven.registry.uri>
+        <gitlab.group.id>68997771</gitlab.group.id>
+        <gitlab.project.id>46961400</gitlab.project.id>
+        <gitlab.group.maven.registry.uri>https://gitlab.com/api/v4/groups/${gitlab.group.id}/-/packages/maven</gitlab.group.maven.registry.uri>
+        <gitlab.project.maven.registry.uri>https://gitlab.com/api/v4/projects/${gitlab.project.id}/packages/maven</gitlab.project.maven.registry.uri>
+        <nexus.maven.registry.uri>http://nexus.breizhcamp.syalioune.com/repository/breizhcamp/</nexus.maven.registry.uri>
+    </properties>
+
+</project>

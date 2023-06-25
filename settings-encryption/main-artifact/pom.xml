@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.syalioune</groupId>
+        <artifactId>settings-encryption</artifactId>
+        <version>1.0</version>
+    </parent>
+
+    <artifactId>main-artifact</artifactId>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>gcp-artifact-registry-ro</id>
+            <url>${gcp.maven.registry.uri}</url>
+        </repository>
+        <repository>
+            <id>gitlab-maven-registry-ro</id>
+            <url>${gitlab.group.maven.registry.uri}</url>
+        </repository>
+        <repository>
+            <id>nexus-maven-registry-ro</id>
+            <url>${nexus.maven.registry.uri}</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.syalioune.gcp</groupId>
+            <artifactId>gcp-artifact</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.syalioune.gitlab</groupId>
+            <artifactId>gitlab-artifact</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.syalioune.nexus</groupId>
+            <artifactId>nexus-artifact</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy-dependencies</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>
+                                ${project.build.directory}/libs
+                            </outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>libs/</classpathPrefix>
+                            <mainClass>com.syalioune.main.Main</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/configuration/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/configuration/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/custom-lifecycle/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/custom-lifecycle/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dependency-checksum/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dependency-checksum/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dependency-version-ranges/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dependency-version-ranges/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/enforcer-next-level/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/enforcer-next-level/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optional-dependency/my-core-feature-with-optionals/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optional-dependency/my-core-feature-with-optionals/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optional-dependency/my-core-feature/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optional-dependency/my-core-feature/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optional-dependency/my-db-driver-a/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optional-dependency/my-db-driver-a/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optional-dependency/my-db-driver-b/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optional-dependency/my-db-driver-b/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optional-dependency/my-db-driver-c/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optional-dependency/my-db-driver-c/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optional-dependency/my-orm-with-optionals/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optional-dependency/my-orm-with-optionals/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optional-dependency/my-orm/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optional-dependency/my-orm/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optional-dependency/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optional-dependency/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/reactor-improvements/common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/reactor-improvements/common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/reactor-improvements/failing-module/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/reactor-improvements/failing-module/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/reactor-improvements/project-a/project-a-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/reactor-improvements/project-a/project-a-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/reactor-improvements/project-a/project-a-impl/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/reactor-improvements/project-a/project-a-impl/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/reactor-improvements/project-a/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/reactor-improvements/project-a/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/reactor-improvements/project-b/project-b-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/reactor-improvements/project-b/project-b-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/reactor-improvements/project-b/project-b-impl/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/reactor-improvements/project-b/project-b-impl/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/reactor-improvements/project-b/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/reactor-improvements/project-b/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/reactor-improvements/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/reactor-improvements/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/remote-repository-filtering/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/remote-repository-filtering/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/repository-layout/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/repository-layout/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/settings-encryption/gcp-artifact/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/settings-encryption/gcp-artifact/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/settings-encryption/gitlab-artifact/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/settings-encryption/gitlab-artifact/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/settings-encryption/main-artifact/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/settings-encryption/main-artifact/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/settings-encryption/nexus-artifact/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/settings-encryption/nexus-artifact/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/settings-encryption/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/settings-encryption/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

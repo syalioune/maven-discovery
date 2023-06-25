@@ -1,0 +1,53 @@
+<settings>
+    <servers>
+        <server>
+            <id>gcp-artifact-registry-ro</id>
+            <configuration>
+                <httpConfiguration>
+                    <get>
+                        <usePreemptive>true</usePreemptive>
+                    </get>
+                    <head>
+                        <usePreemptive>true</usePreemptive>
+                    </head>
+                    <put>
+                        <params>
+                            <property>
+                                <name>http.protocol.expect-continue</name>
+                                <value>false</value>
+                            </property>
+                        </params>
+                    </put>
+                </httpConfiguration>
+            </configuration>
+            <username>_json_key_base64</username>
+            <password>ewogICJ0eXBlIjogInNlcnZpY2VfYWNjb3VudCIsCiAgInByb2plY3RfaWQiOiAibWF2ZW4tcmVnaXN0cnkiLAogICJwcml2YXRlX2tleV9pZCI6ICI0NzJiNzRjYTZjZmJiYmFiMzJiYWI4YWQ3MjlkMGIzYmE0OTliYjg0IiwKICAicHJpdmF0ZV9rZXkiOiAiLS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tXG5NSUlFdmdJQkFEQU5CZ2txaGtpRzl3MEJBUUVGQUFTQ0JLZ3dnZ1NrQWdFQUFvSUJBUURFdVNvZnRSQ3JHM0lxXG5qSmVWK3ZRd2prVklqdERsQUsrSGp4cnFqTDBlWW1RZHJWNVhqZFZDeWNtT2dJT0ZnZVhvMFkxZ3pmQitjellJXG42bHYwNUxsK3VFTzdOc1lDTXkyNjlydmtKUVpZeEMrUDBNbldnRU1vU2o2RnpaZ0hNODZlSVdLRm80UW4xNzdPXG42dEVmUnNYa2N5a0h4cXo2QWR0QWJBVEVJY05HSHpadUFrK0FFVEZnZGhNOE96SThwWVlRTkFxVEVpNDRla1p2XG55MmxvTk9ERC9KdUd4bHlyTHZLVkxsNFJqQkRsVHIrOTRTVzJsVXlCSVpxNDZDb0EvYy93M3U1VE9nd2lUR04yXG56Slk4dVdqTzBsV1dKeHFnRENUdlVCVDk5Rk5ZMTBrc1ZWNWtTajhlWFFYRGFVc0g0b1pRTDBHWnJTZVczcEViXG5DRXJKaVk2VkFnTUJBQUVDZ2dFQUNkSHljOTIraE1RY2VWcEdVT0xUb0w3aFg0TmRreWpyR2ptL0RybFMwWHI0XG40M0JkbHNKS1JJaTlLb05velZmVUtjQ1lMWjVxSkczTTR6b0x1QmhZMkNZTG40Tlc5QklvOUwzUFdFNnUxK3lIXG5NVWNyWkMxSDdQRnoySXNRVFQrOVR6QjhjZzVkRVA0WWxNeXMvc0l5SzdyQjhCVHZXcFdRSTlHZ2xVZllMeDVXXG5XYmpzeDlUcmQ3THh6TzlsODE1Q0Y2WFFXWmFOQXZnNXVjMjdLTnFSUDB0N09mSFJGVFdIdlVoNFE5N2lxckJmXG5VTVQxKzZxbGNNd3F2ZU9EeTRPUEFYT0N6YU03SkxCNThkM0grNHFnam02Ri80SmVCTVBDZVN0NmFYa1BEUnZhXG5hV25vZjdGbHliTG45ditCdk9ERWsyZkJOUGJmMGdRQWQ4VHV2TmlIbXdLQmdRRGkyZXc3ZVdvdkdFNFV2SEEvXG5ydzFjOHd4aWVVaTh4SXhrcThicEJ2S2l3bDkxcTJKYlUxWmhvcEtEQVFsanlZaDFaa29PdUNDTzYwZXVRS1ZGXG5TU2dEVW5jb01PYnUzendHSWw2RmtZSzcxeks1RmdZcnd6Q3hjb3NXT21US3dwWmZtZkZmN0c5SGMvVEI4WUJNXG5LMVBROGVrbDZ4bHlXeE9nYkgyUGZvcHVZd0tCZ1FEZUFEVlc2VGJQMXVUYXRXRXBDTk1DUlBRQ3cwbWNoMXN2XG5IWFptUnNDNlc5dnhieXBVNmU3TExuUnp5UEFIbzhYU0R2TjhNOUEvVkxMTGUzMFpKUGZxV29WVlNLQkptUU9QXG5XRWtrWnU0MUFNWE50OXF6T1laQmMzWWNkdFpaYlYvbC9aSDVRYXlhMmd3Y1kzL1ltd1YxZGxsM2RESHBDM0o2XG5ZaU1XUFJZRXB3S0JnQkN3QVQyNng4SGhJdFZKcTJRejUyTEFDbGd3SGRhdENyclpIQS9HVUJFREJXeXRoOVc2XG5BcSs1K3RjaU8yT1l6cTM4TVZSMTNRZEdiWVozQVBGZzJVMnRRbEMxa0RkZ09wVWs4QmtaUkNtM1FlYjFwTXlSXG5Wa0tuYjIzYUs5SHlrSWRGMXNpOHBzNzF5N3A4bm5oNzgzVjZaakZBNHlWVFo5VTBSZVJKWmJ1TEFvR0JBS2lhXG40K2ZrSzlyaVRPSEdpOHBNaDJYYjFLOGNmcFhCUDRHakVMOVEwU000ak96ckR1MTYxZisrZ25kRmp2ZGViT25DXG5yUzRSZEFJRlk5MmpKam1vbUJtSE1taTVSZk5mb1JLSGJOV1d6eWUyTklTdk5BeVdqZDY3d0dLUjV1MzRZYk1kXG5TSFpVYUxFYkZjT2gxZ0UraTREUXA5WlBpM0NCWHlxUHlqSWpwc3RWQW9HQkFMa1lVY1puTUx5UTJhRjN2U3EvXG5ZZFJQK3F1TWRMK3BST0pWYnJJTmNyaXBlYTFOd2xCbG5iMEx1WmM3V0w5ekdwcDFYdnZnRXZkRHEydEpGcW5WXG53bCtJL2hnTkE2R2R2MStjSjBySUMwYlErWTRZMmRsMTFJOTF4U0FFcGtRVXNxM2RkeFlvazVRL2Zodk1hYkVVXG5taldLQjFxZFdCQnFmaXRZL1IvTlpNYWJcbi0tLS0tRU5EIFBSSVZBVEUgS0VZLS0tLS1cbiIsCiAgImNsaWVudF9lbWFpbCI6ICJtYXZlbi1jbGktcm9AbWF2ZW4tcmVnaXN0cnkuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLAogICJjbGllbnRfaWQiOiAiMTA4MTc3NzU2MjczNzQ5NDY3MTM4IiwKICAiYXV0aF91cmkiOiAiaHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL28vb2F1dGgyL2F1dGgiLAogICJ0b2tlbl91cmkiOiAiaHR0cHM6Ly9vYXV0aDIuZ29vZ2xlYXBpcy5jb20vdG9rZW4iLAogICJhdXRoX3Byb3ZpZGVyX3g1MDlfY2VydF91cmwiOiAiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vb2F1dGgyL3YxL2NlcnRzIiwKICAiY2xpZW50X3g1MDlfY2VydF91cmwiOiAiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vcm9ib3QvdjEvbWV0YWRhdGEveDUwOS9tYXZlbi1jbGktcm8lNDBtYXZlbi1yZWdpc3RyeS5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsCiAgInVuaXZlcnNlX2RvbWFpbiI6ICJnb29nbGVhcGlzLmNvbSIKfQo=</password>
+        </server>
+        <server>
+            <id>gitlab-maven-registry-ro</id>
+            <configuration>
+                <httpHeaders>
+                    <property>
+                        <name>Deploy-Token</name>
+                        <value>_CHqGvLJsk8L-B_NRq2m</value>
+                    </property>
+                </httpHeaders>
+            </configuration>
+        </server>
+        <server>
+            <id>nexus-maven-registry-ro</id>
+            <username>bzhcamp-ro</username>
+            <password>TqtxMGTsYpCOZNIhPVLN</password>
+        </server>
+    </servers>
+    <mirrors>
+        <mirror>
+            <id>maven-default-http-blocker</id>
+            <mirrorOf>external:dummy:*</mirrorOf>
+            <name>Pseudo repository to mirror external repositories initially using HTTP.</name>
+            <url>http://0.0.0.0/</url>
+            <!-- Necessary to allow HTTP repositories -->
+            <blocked>false</blocked>
+        </mirror>
+    </mirrors>
+</settings>
